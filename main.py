@@ -1,10 +1,11 @@
 import random as num
 import sort.selection as sel
 import sort.insertion as ins
+import sort.merge as mer
 
 num_list = []
-while len(num_list) < 1000:
-    temp = num.randint(1,1000)
+while len(num_list) < 100000:
+    temp = num.randint(1, 100000)
     if temp in num_list:
         continue
     else:
@@ -25,3 +26,6 @@ if choice == 1:
 
 elif choice == 3:
     ins.sort(num_list)
+
+elif choice == 5:
+    mer.sort(num_list)

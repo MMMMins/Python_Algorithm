@@ -1,5 +1,6 @@
 import time
 
+
 def sort(num_list):
     start = time.time()
     for i in range(len(num_list)):
@@ -11,7 +12,7 @@ def sort(num_list):
         min_value = num_list[min_index]
         num_list[min_index] = num_list[i]
         num_list[i] = min_value
+    print(f"선택정렬 소요시간 : {time.time() - start:.5f} sec")
     print(num_list)
-    print(f"{time.time() - start:.5f} sec")
 
 
